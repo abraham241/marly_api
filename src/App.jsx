@@ -1,21 +1,22 @@
-import { useState } from 'react'
+import React from 'react';
 import Formulaire from './screen/Formulaire'
 import Liste from './screen/Liste'
 import Page_ajout from './screen/Page_ajout'
-
+// import Form from './components/Form';
+import { BrowserRouter , Routes ,Route } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0)  
+  
 
   return (
-    <>
-      <Liste/>
-      <Page_ajout/>
-      <Formulaire/>
-      <h1 className='text-5xl'>
-        MBolo samba
-      </h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={ <Liste/>}/>
+        <Route path='/Formulaire' element={ <Formulaire/>}/>
+        <Route path='/Page_ajout' element={ <Page_ajout/>}/>
+        {/* <Route path='/Form' element={ <Form/>}/> */}
+      </Routes> 
+    </BrowserRouter>
   )
 }
 

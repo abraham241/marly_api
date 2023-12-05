@@ -1,12 +1,16 @@
 import React from "react";
+import Form from "../components/Form";
 
 
 function Formulaire(){
     return(
         <>
+            
             <h1 className="text-5xl">
-                vous etes sur le form(modif pour add)
+                vous êtes sur le formulaire
             </h1>
+            <Form/>
+
         </>
     )
 }

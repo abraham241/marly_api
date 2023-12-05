@@ -1,11 +1,13 @@
 import React from "react";
+import NavBar from "../components/NavBar";
 
 
 function Page_ajout(){
     return(
         <>
+            <NavBar/>
             <h1 className="text-5xl">
-                vous etes sur la Page_ajout
+                vous êtes sur la Page_ajout
             </h1>
         </>
     )

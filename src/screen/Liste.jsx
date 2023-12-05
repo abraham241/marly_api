@@ -1,11 +1,13 @@
 import React from "react";
+import NavBar from "../components/NavBar";
 
 
 function Liste(){
     return(
         <>
+            <NavBar/>
             <h1 className="text-5xl">
-                vous etes sur la page Liste
+                vous êtes sur la page Liste 
             </h1>
         </>
     )
