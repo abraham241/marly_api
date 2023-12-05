@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function liste(){
+function Liste(){
     return(
         <>
             <h1 className="text-5xl">
@@ -11,4 +11,4 @@ function liste(){
     )
 }
 
-export default liste
+export default Liste
